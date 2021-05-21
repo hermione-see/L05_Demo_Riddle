@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnRevealQ1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AnswerActivity1.class);
+                Intent intent = new Intent(MainActivity.this, AdditionalActivity.class);
                 intent.putExtra("Question 1", "Q1");
                 startActivity(intent);
 
@@ -36,11 +36,20 @@ public class MainActivity extends AppCompatActivity {
         btnRevealQ2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AnswerActivity2.class);
+                Intent intent = new Intent(MainActivity.this, AdditionalActivity.class);
                 intent.putExtra("Question 2", "Q2");
                 startActivity(intent);
             }
         });
+
+//        Intent intent = new Intent (this, MainGame.class);
+//        EditText player1 = (EditText) findViewById(R.id.player1);
+//        String player1Name= player1.getText().toString();
+//        intent.putExtra("player1Name", player1Name);
+//        EditText player2 = (EditText) findViewById(R.id.player2);
+//        String player2Name= player2.getText().toString();
+//        intent2.putExtra("player2Name", player2Name);
+//        startActivity(intent);
 
     }
 }

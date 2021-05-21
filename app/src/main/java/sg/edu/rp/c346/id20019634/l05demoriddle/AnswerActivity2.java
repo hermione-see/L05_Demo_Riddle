@@ -15,7 +15,7 @@ public class AnswerActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_answer2);
 
-        tvAnswer2 = findViewById(R.id.textView);
+        tvAnswer2 = findViewById(R.id.tvAnswer);
 //      tvAnswer.setText("In Answer Activity 2");
 
         Intent intentReceived = getIntent();
